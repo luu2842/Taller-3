@@ -54,8 +54,8 @@ public class TestMetodos implements CommandLineRunner {
 	@Transactional
 	public void run(String... args) throws Exception {
 
-		/*
 		//Creacion de 2 alumnos
+		/*
 		Direccion direccionAlumno1 = new Direccion("Sur 2", "2", "22222", "2","2", "Mexico");
 		Persona alumno1 = new Alumno(null, "Evelyn", "Neri", "8596741236", "eneri", direccionAlumno1);
 		Persona personaAlumno1 = alumnoDAO.guardar(alumno1);
@@ -140,10 +140,8 @@ public class TestMetodos implements CommandLineRunner {
 		Aula aulaPabellon2 = aula2.get();
 		aulaPabellon2.setPabellon(pabellon2.get());
 		aulaDAO.guardar(aulaPabellon2);
-		*/
 
 		//Asignarle pabellones a empleados
-		/*
 		Optional<Persona> empleado1 = empleadoDAO.buscarPorId(3L);
 		Optional<Pabellon> pabellon1 = pabellonDAO.buscarPorId(1L);
 		Empleado empleadoPabellon1 = (Empleado) empleado1.get();
@@ -155,10 +153,8 @@ public class TestMetodos implements CommandLineRunner {
 		Empleado empleadoPabellon2 = (Empleado) empleado2.get();
 		empleadoPabellon2.setPabellon(pabellon2.get());
 		empleadoDAO.guardar(empleadoPabellon2);
-		*/
 
 		//Asignar carrera a profesor
-		/*
 		Optional<Persona> profesor1 = profesorDAO.buscarPorId(5L);
 		Optional<Carrera> carrera1 = carreraDAO.buscarPorId(1L);
 		Profesor profesorCarrera1 =(Profesor) profesor1.get();
@@ -175,7 +171,8 @@ public class TestMetodos implements CommandLineRunner {
 		profesorCarrera2.setCarreras(carreras2);
 		profesorDAO.guardar(profesorCarrera2);
 		*/
-
+//Prueba de metodos
+		/*
 		//Profesor
 		Iterable<Persona> profesores = profesorDAO.findProfesoresByCarrera("Administracion");
 		profesores.forEach(System.out::println);
@@ -204,6 +201,7 @@ public class TestMetodos implements CommandLineRunner {
 		
 		Iterable<Pabellon> pabellones2 = pabellonDAO.findPabellonByNombre("Pabellon 1");
 		pabellones2.forEach(System.out::println);
+		*/
 		
 
 	}
